@@ -1,9 +1,12 @@
-
+points = 0
+strength = 5
+intelegence = 5
+health = 100
 def statPoints():
-    points = 0
-    strength = 5
-    intelegence = 5
-    health = 100
+    global points 
+    global strength 
+    global intelegence 
+    global health 
     points = points + pointsGain
     print("You have",points,"stat poits to allocate between 3 stats")
     print("warning!! If you input an invalid choice you will lose all your stat points")
@@ -48,3 +51,4 @@ def statPoints():
 pointsGain = 0
 pointsGain = pointsGain + 20
 statPoints()
+
